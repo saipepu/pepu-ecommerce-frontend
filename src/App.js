@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <>
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" exact element={<SignUp />} />
         <Route path="/admin/signin" exact element={<SignIn />} />
