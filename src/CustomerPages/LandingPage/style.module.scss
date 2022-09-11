@@ -1,0 +1,57 @@
+.heroContainer {
+  min-height: 60vh;
+  height: 700px;
+  width: 100%;
+  min-width: 450px;
+  background-color: aliceblue;
+  background-image: url('../../assets/images/discount_banner.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40px;
+  .heroText {
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    .header {
+      font-weight: bolder;
+      font-size: 36px;
+    }
+    .subHeader {
+      position: relative;
+      font-size: 24px;
+    }
+    .subHeader::after {
+      position: absolute;
+      content: '';
+      bottom: -17px;
+      left: 0px;
+      width: 20%;
+      height: 2px;
+      background-color: white;
+    }
+    @media only screen and (max-width: 560px) {
+      align-items: center;
+      .header,.subHeader {
+        text-align: center;
+      }
+      .subHeader::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  @media only screen and (min-width: 560px) {
+    background-position: center;
+    min-width: 900px;
+  }
+  @media only screen and (min-width: 1300px) {
+    background-position: center;
+  }
+}

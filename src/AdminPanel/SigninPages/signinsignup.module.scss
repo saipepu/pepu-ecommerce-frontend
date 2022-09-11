@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-image: url("../../assets/images/signin_bg.png");
+  background-image: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  .form {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    .logo {
+      font: 64px 'Antic Didone', 'Open Sans';
+      margin: 30px;
+    }
+    .input_wrapper {
+      width: 100%;
+      margin-bottom: 10px;
+        .input {
+          background-color: red;
+        }
+    }
+    button {
+      background-color: black;
+    }
+  }
+  .notification {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    margin: 20px;
+    transform: translateX(-300px);
+    transition: all 1s ease-in-out;
+  }
+}
