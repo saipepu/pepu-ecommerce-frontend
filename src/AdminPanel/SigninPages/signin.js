@@ -79,7 +79,7 @@ const SignInPage = () => {
             <Input id="Password" placeholder="password" type="password" {...form.getInputProps('password')} />
           </InputWrapper>
           <Group position="right">
-            <Text>Don't have an account?<Text variant="link" component="a" href="/admin/signup">SignUp</Text></Text>
+            <Text>Don't have an account?<Text variant="link" component="a" onClick={() => navigate('/')}>SignUp</Text></Text>
             <Button type="submit">SignUp</Button>
           </Group>
           {isLoading ? (

@@ -74,7 +74,7 @@ const SignUpPage = () => {
             <Input id="name" placeholder="password" type="password" {...form.getInputProps('password')} />
           </InputWrapper>
           <Group position="right">
-            <Text>Already have an account?<Text variant="link" component="a" href="/admin/signin"> SignIn</Text></Text>
+            <Text>Already have an account?<Text variant="link" component="a" onClick={() => navigate('/admin/signin')}> SignIn</Text></Text>
             <Button type="submit">SignUp</Button>
           </Group>
           {isLoading ? (

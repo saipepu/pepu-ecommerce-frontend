@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { ActionIcon, Group, Navbar, Text, MantineProvider, Divider } from '@mantine/core';
 import { Dashboard, ManualGearbox,Box, ListDetails, ListCheck, PlaylistX } from 'tabler-icons-react'
 import styles from './style.module.scss'
+import { useNavigate } from 'react-router-dom';
 
 const AdminNavbar = ({opened, setOpened}) => {
+  const navigate = useNavigate();
 
   const theme = {
     breakpoints: {
@@ -18,15 +20,15 @@ const AdminNavbar = ({opened, setOpened}) => {
     <>
     <MantineProvider theme={theme} style={{ Group: { root: { justifyContent: 'flex-start' }}}}>
         <Navbar p="md" hiddenBreakpoint="md" hidden={!opened} width={{ sm: 180, md:200, lg: 300}} className={styles.navbar}>
-          <Group className={styles.navbar_links} component="a" href="/admin/dashboard">
+          <Group className={styles.navbar_links} component="a" onClick={() => navigate('/admin/dashboard')}>
             <ActionIcon><Dashboard /></ActionIcon>
             <Text>Dashboard</Text>
           </Group>
-          <Group className={styles.navbar_links} component="a" href="/admin/category">
+          <Group className={styles.navbar_links} component="a" onClick={() => navigate('/admin/category')}>
             <ActionIcon><ManualGearbox /></ActionIcon>
             <Text>Category</Text>
           </Group>
-          <Group className={styles.navbar_links} component="a" href="/admin/product">
+          <Group className={styles.navbar_links} component="a" onClick={() => navigate('/admin/product')}>
             <ActionIcon><Box /></ActionIcon>
             <Text>Product</Text>
           </Group>
