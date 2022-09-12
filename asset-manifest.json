@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/pepu-ecommerce-frontend/static/css/main.74d8b950.css",
-    "main.js": "/pepu-ecommerce-frontend/static/js/main.175d8def.js",
+    "main.js": "/pepu-ecommerce-frontend/static/js/main.e932bb60.js",
     "static/media/promotion_banner.png": "/pepu-ecommerce-frontend/static/media/promotion_banner.94d8dd00b46774d84ea6.png",
     "static/media/student_promotion_banner.png": "/pepu-ecommerce-frontend/static/media/student_promotion_banner.86b6ff748f2504c8538a.png",
     "static/media/signin_bg.png": "/pepu-ecommerce-frontend/static/media/signin_bg.0bd2dafd6970df48de18.png",
     "static/media/discount_banner.png": "/pepu-ecommerce-frontend/static/media/discount_banner.497af90bcced9d6d5a66.png",
     "index.html": "/pepu-ecommerce-frontend/index.html",
     "main.74d8b950.css.map": "/pepu-ecommerce-frontend/static/css/main.74d8b950.css.map",
-    "main.175d8def.js.map": "/pepu-ecommerce-frontend/static/js/main.175d8def.js.map"
+    "main.e932bb60.js.map": "/pepu-ecommerce-frontend/static/js/main.e932bb60.js.map"
   },
   "entrypoints": [
     "static/css/main.74d8b950.css",
-    "static/js/main.175d8def.js"
+    "static/js/main.e932bb60.js"
   ]
 }
